@@ -28,16 +28,30 @@
     <img src="https://media.materiel.net/r550/products/MN0005541190_1.jpg">
     <img src="https://formation-informatique-avec-cedric.fr/wp-content/uploads/2018/08/ouverture-transfer-photo-690.jpg">
 </div>
+
 <h2 align="center">feedback</h2>                                                         
 <form align="center">
-<button>B</button> <button>I</button> <button>Underline</button>
-<select> 
-<option>20px</option> 
+<button id="myB" onclick="makebold()">B</button> 
+<button id="myI" onclick="makeitalic()">I</button> 
+<button id="myunderline" onclick="makeunderline()">Underline</button>
+
+<select id="size" onchange="changesize()">
+    <option value="20px">20px</option>
+    <option value="40px">40px</option>
+    <option value="60px">60px</option>
 </select>
-<select>
-<option>anal</option>   
+
+<select id="police" onchange="changepolice()">
+    <option value="anal">anal</option>
+    <option value="geneva">geneva</option>
+    <option value="verdana">verdana</option>
+    <option value="anal black">anal black</option>
 </select>
+
 </form>
-<form align="center"><textarea col="200" row="150"></textarea></form>
-</body>  
+<form align="center">
+<textarea id="texte" col="200" row="150"></textarea>
+</form>
+</body> 
+<script src="patch_to_js_file_/main.js"></script> 
 </html>      
