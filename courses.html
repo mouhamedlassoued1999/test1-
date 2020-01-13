@@ -2,6 +2,12 @@
     <head>
 <title> courses </title>
 <link rel="stylesheet" href="css/style.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
     <div>
@@ -18,17 +24,49 @@
     </div>
 <br>              
 <div class="image" align="center">
+    <div class="cours">
     <img src="https://img.aws.la-croix.com/2019/08/28/1201043673/gendarmes-francais-realise-premiere-nettoyant-ordinateurs-infectes-botnet_0_730_496.jpg">
-    <img src="https://www.fr.ch/sites/default/files/2018-09/Statistiques%20finances%20communales.jpg">
-    <img src="https://ressources.blogdumoderateur.com/2019/03/code-ia-664x441.jpg">
-    <img src="https://media.materiel.net/r550/products/MN0005512126_1_0005527975_0005555209.jpg">
-    <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/icloud/ios12-win10-pc-ipad-pro-iphone-x-icloud-photo-hero.jpg">
-    <img src="https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/a/3/0/a30d5726c8_68786_ibmpc.jpg">
-    <img src="https://www.techadvisor.fr/cmsdata/features/3661296/dell_latitude_14_review21__thumb800.jpg">
-    <img src="https://media.materiel.net/r550/products/MN0005541190_1.jpg">
-    <img src="https://formation-informatique-avec-cedric.fr/wp-content/uploads/2018/08/ouverture-transfer-photo-690.jpg">
+    
+<a href="#ex1" rel="modal:open"><button class="bcours" > view more </button></a>
+    
 </div>
-
+    <div class="cours">
+    <img src="https://www.fr.ch/sites/default/files/2018-09/Statistiques%20finances%20communales.jpg">
+    <a href="#ex1" rel="modal:open"><button class="bcours" > view more </button></a>
+    </div>
+    <div class="cours">
+    <img src="https://ressources.blogdumoderateur.com/2019/03/code-ia-664x441.jpg">
+    <a href="#ex1" rel="modal:open"><button class="bcours" > view more </button></a>
+    </div>
+</div>
+<div class="image" align="center">
+    <div class="cours">
+    <img src="https://media.materiel.net/r550/products/MN0005512126_1_0005527975_0005555209.jpg">
+    <a href="#ex1" rel="modal:open"><button class="bcours" > view more </button></a>
+    </div>
+    <div class="cours">
+    <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/icloud/ios12-win10-pc-ipad-pro-iphone-x-icloud-photo-hero.jpg">
+    <a href="#ex1" rel="modal:open"><button class="bcours" > view more </button></a>
+    </div>
+    <div class="cours">
+    <img src="https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/a/3/0/a30d5726c8_68786_ibmpc.jpg">
+    <a href="#ex1" rel="modal:open"><button class="bcours" > view more </button></a>
+    </div>
+</div>
+<div class="image" align="center">
+    <div class="cours">
+    <img src="https://www.techadvisor.fr/cmsdata/features/3661296/dell_latitude_14_review21__thumb800.jpg">
+    <a href="#ex1" rel="modal:open"><button class="bcours" > view more </button></a>
+    </div>
+    <div class="cours">
+    <img src="https://media.materiel.net/r550/products/MN0005541190_1.jpg">
+    <a href="#ex1" rel="modal:open"><button class="bcours" > view more </button></a>
+    </div>
+    <div class="cours">
+    <img src="https://formation-informatique-avec-cedric.fr/wp-content/uploads/2018/08/ouverture-transfer-photo-690.jpg">
+    <a href="#ex1" rel="modal:open"><button class="bcours" > view more </button></a>
+    </div>
+</div>
 <h2 align="center">feedback</h2>                                                         
 <form align="center">
 <button id="myB" onclick="makebold()">B</button> 
@@ -52,6 +90,10 @@
 <form align="center">
 <textarea id="texte" col="200" row="150"></textarea>
 </form>
+<div id="ex1" class="modal">
+    <p>Thanks for clicking. That felt good.</p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
 </body> 
 <script src="patch_to_js_file_/main.js"></script> 
 </html>      
